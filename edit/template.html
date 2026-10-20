@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="121a2463-37ac-44cc-a87d-e168de1c160a"></script>
+
+</head>
+<body>
+<x-dc>
+<helmet>
+  <style>/* Origin Design System — Webfonts
+   Gopher (headline / display), DM Sans (body), Epilogue (Google/social alternate for Gopher).
+   Paths are relative to this file. */
+
+/* ---------- Gopher: primary headline typeface ---------- */
+@font-face {
+  font-family: "Gopher";
+  src: url("93e8021a-d4a5-4252-9f4b-6d5c94e9d794") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gopher";
+  src: url("f8d7e009-1727-4ef3-b09e-d6d0a80bd5ee") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gopher";
+  src: url("10b618c8-5a2a-42ef-903a-981dcd01f354") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gopher";
+  src: url("2e41dad3-2b1c-439f-b413-e7e949825c66") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gopher";
+  src: url("a28ca228-11e2-47bb-a644-b1d03eb9f638") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gopher";
+  src: url("5ccbdb9a-a95f-40bb-ae92-8b5865edcbe0") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gopher";
+  src: url("de320c06-77c6-4d69-9838-b36444d56c14") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gopher";
+  src: url("81ad78ab-fc37-4cd6-95a7-78a881c6b8e5") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---------- DM Sans: body typeface ---------- */
+@font-face {
+  font-family: "DM Sans";
+  src: url("c1226ce6-496a-4b36-b5c3-64792e62d141") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("1c69babc-6845-476c-8115-8609b292fb2b") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("7d13b0f7-c7e8-4368-928a-f619c8fb7193") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("2119ac6f-3fe3-4a18-868c-66629b7a5f10") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("aa50f12e-7485-40e0-ac3e-82e3c523398f") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ---------- Epilogue: Google/social alternate for Gopher ---------- */
+@font-face {
+  font-family: "Epilogue";
+  src: url("98d764b9-2c7c-4db7-aa8b-68b3e2a3957c") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+</style>
+  <style>/* Origin Design System — global stylesheet entry point.
+   Consumers link THIS one file. Keep it as @import lines only. */
+
+/* Origin Design System — Webfonts
+   Gopher (headline / display), DM Sans (body), Epilogue (Google/social alternate for Gopher).
+   Paths are relative to this file. */
+
+/* ---------- Gopher: primary headline typeface ---------- */
+@font-face {
+  font-family: "Gopher";
+  src: url("93e8021a-d4a5-4252-9f4b-6d5c94e9d794") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gopher";
+  src: url("f8d7e009-1727-4ef3-b09e-d6d0a80bd5ee") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gopher";
+  src: url("10b618c8-5a2a-42ef-903a-981dcd01f354") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gopher";
+  src: url("2e41dad3-2b1c-439f-b413-e7e949825c66") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gopher";
+  src: url("a28ca228-11e2-47bb-a644-b1d03eb9f638") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gopher";
+  src: url("5ccbdb9a-a95f-40bb-ae92-8b5865edcbe0") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gopher";
+  src: url("de320c06-77c6-4d69-9838-b36444d56c14") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gopher";
+  src: url("81ad78ab-fc37-4cd6-95a7-78a881c6b8e5") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---------- DM Sans: body typeface ---------- */
+@font-face {
+  font-family: "DM Sans";
+  src: url("c1226ce6-496a-4b36-b5c3-64792e62d141") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("1c69babc-6845-476c-8115-8609b292fb2b") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("7d13b0f7-c7e8-4368-928a-f619c8fb7193") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("2119ac6f-3fe3-4a18-868c-66629b7a5f10") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("aa50f12e-7485-40e0-ac3e-82e3c523398f") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ---------- Epilogue: Google/social alternate for Gopher ---------- */
+@font-face {
+  font-family: "Epilogue";
+  src: url("98d764b9-2c7c-4db7-aa8b-68b3e2a3957c") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Origin Design System — Color tokens
+   Lead with Coral. Pearl is the default digital background.
+   Ruby is the default body-copy color on light backgrounds.
+   Values mirror the production site theme (--o-* / ruby-theme). */
+
+:root {
+  /* ---------- Core palette: Coral, Pearl, Light Pink, Tan, Light Blue ----------
+     Lead with Coral. Pearl is the default digital background. */
+  --color-coral: #eb5e54;        /* primary brand color — lead with this */
+  --color-pearl: #fceee5;         /* default digital background */
+  --color-light-pink: #ffdecf;
+  --color-tan: #faba99;
+  --color-light-blue: #c2cfe3;
+
+  /* ---------- Supporting: Ruby, Blush, Coral-Text ---------- */
+  --color-ruby: #79242f;          /* preferred body-copy color on light/neutral */
+  --color-blush: #ed806b;
+  --color-coral-text: #e05345;    /* WEB/APP ACCESSIBILITY FALLBACK ONLY. Darker coral used solely in
+                                     digital UI where Coral (#eb5e54) fails WCAG/ADA contrast on Pearl or
+                                     Light Pink. NOT a brand color. Never use in print, email, social,
+                                     decks, or logos, or anywhere Coral already passes. If Coral passes, use Coral. */
+
+  /* ---------- Neutrals: White, Near-Black ---------- */
+  --color-white: #ffffff;
+  --color-near-black: #241c17;    /* brand "black" */
+
+  /* ---------- Extended palette (ILLUSTRATION ONLY — not for UI, backgrounds, or data) ----------
+     Every color outside Core / Supporting / Neutrals lives here. */
+  --color-mustard: #e8963b;       /* abstract illustration / waves accent only */
+  --color-cream: #fcf2e0;         /* pair only with Mustard */
+  --color-true-coral: #da675a;    /* coral hover/active tint used on the live site */
+  --color-brown: #803321;         /* deep coral-brown line art */
+  --color-blue: #26304a;          /* deep navy */
+  --color-ext-plum: #573263;
+  --color-ext-rose: #d98f8a;
+  --color-ext-sand: #f2e5d1;      /* cream line-art stroke inside coral icons */
+
+  /* ---------- Semantic surfaces ---------- */
+  --surface-page: var(--color-pearl);     /* default digital background */
+  --surface-card: var(--color-white);
+  --surface-raised: var(--color-white);
+  --surface-pink: var(--color-light-pink);
+  --surface-tan: var(--color-tan);
+  --surface-blue: var(--color-light-blue);
+  --surface-ruby: var(--color-ruby);      /* dark section background */
+  --surface-coral: var(--color-coral);
+
+  /* ---------- Semantic text ---------- */
+  --text-body: var(--color-ruby);          /* body copy on light backgrounds */
+  --text-heading: var(--color-coral-text);  /* headings/buttons on Pearl & Light Pink */
+  --text-heading-on-light: var(--color-coral);
+  --text-muted: #9a6f63;                    /* softened ruby for secondary text */
+  --text-on-coral: var(--color-white);      /* min 24px / bold per accessibility */
+  --text-on-ruby: var(--color-pearl);       /* body on Ruby background */
+  --text-on-ruby-heading: var(--color-tan); /* headings/links on Ruby background */
+  --text-inverse: var(--color-white);
+
+  /* ---------- Semantic lines / borders ---------- */
+  --border-soft: rgba(121, 36, 47, 0.14);   /* ruby @ low alpha — hairlines on light */
+  --border-coral: var(--color-coral);
+  --border-strong: var(--color-near-black);
+
+  /* ---------- Focus ---------- */
+  --focus-ring: 0 0 0 3px rgba(235, 94, 84, 0.35);
+}
+
+/* Origin Design System — Typography tokens
+   Headlines: Gopher Medium (reverse-contrast geometric sans, slightly retro).
+   Body: DM Sans. Social/Google alternate for Gopher: Epilogue.
+   Type scale mirrors the production site (responsive H1–H6). */
+
+:root {
+  /* ---------- Families ---------- */
+  --font-display: "Gopher", "Epilogue", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-body: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-alt: "Epilogue", "Gopher", sans-serif; /* Google Docs / Slides / social fallback */
+
+  /* ---------- Weights ---------- */
+  --weight-body: 400;
+  --weight-body-medium: 500;
+  --weight-body-bold: 700;
+  --weight-display: 500;       /* Gopher Medium is the default headline weight */
+  --weight-display-bold: 700;  /* expressive / web headings */
+  --weight-display-black: 800; /* expressive typography only */
+
+  /* ---------- Display / heading scale (desktop) ----------
+     Gopher, weight 500–700, line-height ~1.1–1.3, tight leading on large sizes. */
+  --text-hero: 64px;     /* H0 — hero */
+  --text-h1: 48px;
+  --text-h2: 42px;
+  --text-h3: 30px;
+  --text-h4: 28px;
+  --text-h5: 22px;
+  --text-h6: 18px;
+
+  --leading-display: 1.1;   /* tight leading for large Gopher */
+  --leading-heading: 1.3;
+
+  /* ---------- Body scale ---------- */
+  --text-lead: 20px;     /* intro paragraphs */
+  --text-body-lg: 18px;
+  --text-body: 16px;     /* P1 */
+  --text-body-sm: 14px;  /* P2 */
+  --text-caption: 13px;
+  --text-eyebrow: 13px;  /* uppercase label / badge */
+
+  --leading-body: 1.6;   /* DM Sans +20% leading */
+  --leading-tight: 1.4;
+
+  --tracking-eyebrow: 0.08em;
+  --tracking-tight: -0.01em;
+}
+
+/* Convenience helpers (optional; tokens above are the source of truth) */
+.o-display { font-family: var(--font-display); font-weight: var(--weight-display); line-height: var(--leading-display); color: var(--text-heading); }
+.o-body { font-family: var(--font-body); font-weight: var(--weight-body); line-height: var(--leading-body); color: var(--text-body); }
+.o-eyebrow {
+  font-family: var(--font-body);
+  font-weight: var(--weight-body-bold);
+  font-size: var(--text-eyebrow);
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+}
+
+/* Origin Design System — Spacing, radii, shadows, layout
+   The live site favors generous spacing, soft 8–24px radii, and gentle shadows.
+   Backgrounds stay warm (Pearl); cards are white with a soft shadow, rarely a border. */
+
+:root {
+  /* ---------- Spacing scale (4px base) ---------- */
+  --space-0: 0;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-32: 128px;
+
+  /* Section rhythm */
+  --section-pad-y: clamp(56px, 8vw, 120px);
+  --gutter: clamp(20px, 4vw, 48px); /* @kind spacing */
+
+  /* ---------- Corner radii ----------
+     8px is the workhorse (buttons, inputs); cards use 16–24px; pills for chips. */
+  --radius-xs: 4px;
+  --radius-sm: 8px;       /* buttons, inputs, small controls */
+  --radius-md: 12px;
+  --radius-lg: 16px;      /* cards */
+  --radius-xl: 24px;      /* feature cards, media frames */
+  --radius-2xl: 40px;     /* large hero / image wells */
+  --radius-pill: 999px;   /* badges, chips, avatar */
+  --radius-round: 50%;
+
+  /* ---------- Shadows (soft, warm-tinted) ---------- */
+  --shadow-xs: 0 1px 2px rgba(36, 28, 23, 0.06);
+  --shadow-sm: 0 2px 8px rgba(36, 28, 23, 0.08);
+  --shadow-md: 0 8px 24px rgba(36, 28, 23, 0.10);
+  --shadow-lg: 0 16px 48px rgba(36, 28, 23, 0.12);
+  --shadow-coral: 0 12px 32px rgba(235, 94, 84, 0.22);
+
+  /* ---------- Containers (mirrors site widths) ---------- */
+  --container-sm: 900px;
+  --container-md: 1100px;
+  --container-lg: 1288px;
+  --container-xl: 1400px;
+
+  /* ---------- Motion ----------
+     Site uses simple linear/eased color + background transitions (~0.2s). No bounces. */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1); /* @kind other */
+  --dur-fast: 0.15s; /* @kind other */
+  --dur-base: 0.2s; /* @kind other */
+  --dur-slow: 0.35s; /* @kind other */
+  --transition-color: color var(--dur-base) linear, background-color var(--dur-base) linear, border-color var(--dur-base) linear;
+}
+
+/* Origin Design System — base element styles + a few brand utilities.
+   Sets the warm Pearl background, DM Sans body, Gopher coral headings. */
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+  color: var(--text-body);
+  background-color: var(--surface-page);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Headings — Gopher, coral, tight leading. Use o-h* classes for the exact site scale. */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: var(--weight-display);
+  line-height: var(--leading-heading);
+  color: var(--text-heading);
+  margin: 0 0 var(--space-4);
+  text-wrap: balance;
+}
+
+p { margin: 0 0 var(--space-4); text-wrap: pretty; }
+
+a { color: var(--color-coral-text); text-decoration: none; transition: var(--transition-color); }
+a:hover { color: var(--color-ruby); }
+
+strong, b { font-weight: var(--weight-body-bold); }
+em, i { font-style: italic; }
+
+img { max-width: 100%; display: block; }
+
+:focus-visible { outline: none; box-shadow: var(--focus-ring); border-radius: var(--radius-xs); }
+
+/* ---------- Heading scale (matches the production site, responsive) ---------- */
+.o-h1 { font-family: var(--font-display); color: var(--text-heading-on-light); font-weight: var(--weight-display); line-height: 1.2; font-size: var(--text-h1); margin: 0 0 var(--space-4); }
+.o-h2 { font-family: var(--font-display); color: var(--text-heading-on-light); font-weight: var(--weight-display); line-height: 1.25; font-size: var(--text-h2); margin: 0 0 var(--space-4); }
+.o-h3 { font-family: var(--font-display); color: var(--text-heading-on-light); font-weight: var(--weight-display); line-height: 1.3; font-size: var(--text-h3); margin: 0 0 var(--space-3); }
+.o-h4 { font-family: var(--font-display); color: var(--text-heading-on-light); font-weight: var(--weight-display); line-height: 1.3; font-size: var(--text-h4); margin: 0 0 var(--space-3); }
+.o-h5 { font-family: var(--font-display); color: var(--text-heading-on-light); font-weight: var(--weight-display); line-height: 1.3; font-size: var(--text-h5); margin: 0 0 var(--space-2); }
+.o-h6 { font-family: var(--font-display); color: var(--text-heading-on-light); font-weight: var(--weight-display); line-height: 1.3; font-size: var(--text-h6); margin: 0 0 var(--space-2); }
+.o-hero { font-family: var(--font-display); color: var(--text-heading-on-light); font-weight: var(--weight-display); line-height: 1.05; font-size: var(--text-hero); letter-spacing: var(--tracking-tight); margin: 0 0 var(--space-5); }
+
+.o-lead { font-size: var(--text-lead); line-height: var(--leading-body); color: var(--text-body); }
+
+/* Brand container */
+.o-container { width: 100%; max-width: var(--container-lg); margin-inline: auto; padding-inline: var(--gutter); }
+
+/* Origin Design System — component styles.
+   Interactive states (hover/focus/disabled) live here so JSX wrappers stay thin.
+   Mirrors the production .o-button system: solid fills invert to outline on hover,
+   8px radius, DM Sans, soft color transitions. */
+
+/* ============================ BUTTON ============================ */
+.o-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  font-family: var(--font-body);
+  font-weight: var(--weight-body-bold);
+  text-align: center;
+  border: 1.5px solid transparent;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  text-decoration: none;
+  transition: var(--transition-color);
+  white-space: nowrap;
+  line-height: 1.2;
+}
+.o-btn:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+.o-btn[disabled], .o-btn.is-disabled { opacity: 0.45; pointer-events: none; }
+
+/* sizes */
+.o-btn--sm { min-width: 120px; padding: 8px 20px; font-size: 16px; }
+.o-btn--md { min-width: 150px; padding: 11px 26px; font-size: 17px; }
+.o-btn--lg { min-width: 180px; padding: 13px 30px; font-size: 18px; }
+.o-btn--full { width: 100%; }
+.o-btn--icon-only { min-width: 0; padding: 11px; border-radius: var(--radius-sm); }
+
+/* solid (fills, invert to outline on hover) */
+.o-btn--solid-coral { background: var(--color-coral); border-color: var(--color-coral); color: var(--color-white); }
+.o-btn--solid-coral:hover { background: transparent; color: var(--color-coral-text); }
+.o-btn--solid-blue { background: var(--color-blue); border-color: var(--color-blue); color: var(--color-white); }
+.o-btn--solid-blue:hover { background: transparent; color: var(--color-blue); }
+.o-btn--solid-brown { background: var(--color-brown); border-color: var(--color-brown); color: var(--color-white); }
+.o-btn--solid-brown:hover { background: transparent; color: var(--color-brown); }
+.o-btn--solid-white { background: var(--color-white); border-color: var(--color-white); color: var(--color-coral-text); }
+.o-btn--solid-white:hover { background: transparent; color: var(--color-white); }
+
+/* hollow (outline, fills on hover) */
+.o-btn--hollow-coral { background: transparent; border-color: var(--color-coral); color: var(--color-coral-text); }
+.o-btn--hollow-coral:hover { background: var(--color-coral); color: var(--color-white); }
+.o-btn--hollow-blue { background: transparent; border-color: var(--color-blue); color: var(--color-blue); }
+.o-btn--hollow-blue:hover { background: var(--color-blue); color: var(--color-white); }
+.o-btn--hollow-brown { background: transparent; border-color: var(--color-brown); color: var(--color-brown); }
+.o-btn--hollow-brown:hover { background: var(--color-brown); color: var(--color-white); }
+.o-btn--hollow-white { background: transparent; border-color: var(--color-white); color: var(--color-white); }
+.o-btn--hollow-white:hover { background: var(--color-white); color: var(--color-coral-text); }
+
+/* ghost / text */
+.o-btn--ghost { background: transparent; border-color: transparent; color: var(--color-coral-text); min-width: 0; padding-inline: var(--space-3); }
+.o-btn--ghost:hover { color: var(--color-ruby); }
+
+/* ============================ BADGE / EYEBROW ============================ */
+.o-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-body);
+  font-weight: var(--weight-body-bold);
+  font-size: var(--text-body-sm);
+  line-height: 1.2;
+}
+.o-badge--coral { background: var(--color-coral); color: var(--color-white); }
+.o-badge--pink { background: var(--color-light-pink); color: var(--color-ruby); }
+.o-badge--tan { background: var(--color-tan); color: var(--color-ruby); }
+.o-badge--blue { background: var(--color-light-blue); color: var(--color-blue); }
+.o-badge--cream { background: var(--color-cream); color: var(--color-coral-text); }
+.o-badge--ruby { background: var(--color-ruby); color: var(--color-pearl); }
+.o-badge--outline { background: transparent; border: 1.5px solid var(--color-coral); color: var(--color-coral-text); }
+
+.o-eyebrow-label {
+  font-family: var(--font-body);
+  font-weight: var(--weight-body-bold);
+  font-size: var(--text-eyebrow);
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--color-coral-text);
+}
+
+/* ============================ TAG / CHIP ============================ */
+.o-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 7px 14px;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-body);
+  font-size: var(--text-body-sm);
+  font-weight: var(--weight-body-medium);
+  background: var(--color-white);
+  color: var(--color-ruby);
+  border: 1.5px solid var(--border-soft);
+  cursor: default;
+  transition: var(--transition-color);
+}
+.o-tag--selectable { cursor: pointer; }
+.o-tag--selectable:hover { border-color: var(--color-coral); color: var(--color-coral-text); }
+.o-tag--active { background: var(--color-coral); border-color: var(--color-coral); color: var(--color-white); }
+.o-tag__remove { display: inline-flex; cursor: pointer; opacity: 0.7; }
+.o-tag__remove:hover { opacity: 1; }
+
+/* ============================ CARD ============================ */
+.o-card {
+  background: var(--surface-card);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: box-shadow var(--dur-base) var(--ease-standard), transform var(--dur-base) var(--ease-standard);
+}
+.o-card--pad { padding: var(--space-6); }
+.o-card--hover:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+.o-card--flat { box-shadow: none; border: 1.5px solid var(--border-soft); }
+.o-card--pink { background: var(--color-light-pink); }
+.o-card--tan { background: var(--color-tan); }
+.o-card--blue { background: var(--color-light-blue); }
+.o-card--ruby { background: var(--color-ruby); color: var(--color-pearl); }
+.o-card--coral { background: var(--color-coral); color: var(--color-white); }
+.o-card__media { display: block; width: 100%; object-fit: cover; }
+
+/* ============================ AVATAR ============================ */
+.o-avatar { border-radius: var(--radius-round); object-fit: cover; background: var(--color-light-pink); display: inline-block; flex: none; }
+.o-avatar--ring { box-shadow: 0 0 0 3px var(--color-pearl), 0 0 0 5px var(--color-coral); }
+
+/* ============================ BRAND ICON (duotone badge) ============================ */
+.o-brand-icon { display: inline-block; border-radius: var(--radius-round); }
+.o-brand-icon img, .o-brand-icon svg { display: block; width: 100%; height: 100%; }
+
+/* ============================ FORM CONTROLS ============================ */
+.o-field { display: flex; flex-direction: column; gap: var(--space-2); }
+.o-label { font-family: var(--font-body); font-weight: var(--weight-body-bold); font-size: var(--text-body-sm); color: var(--color-ruby); }
+.o-hint { font-size: var(--text-caption); color: var(--text-muted); }
+.o-hint--error { color: var(--color-coral-text); }
+
+.o-input, .o-textarea, .o-select {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  color: var(--color-ruby);
+  background: var(--color-white);
+  border: 1.5px solid var(--border-soft);
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+  width: 100%;
+  transition: var(--transition-color), box-shadow var(--dur-base) var(--ease-standard);
+}
+.o-input::placeholder, .o-textarea::placeholder { color: var(--text-muted); }
+.o-input:hover, .o-textarea:hover, .o-select:hover { border-color: var(--color-tan); }
+.o-input:focus, .o-textarea:focus, .o-select:focus { outline: none; border-color: var(--color-coral); box-shadow: var(--focus-ring); }
+.o-input--error, .o-textarea--error { border-color: var(--color-coral); }
+.o-input[disabled], .o-textarea[disabled], .o-select[disabled] { background: var(--color-pearl); opacity: 0.7; cursor: not-allowed; }
+.o-textarea { resize: vertical; min-height: 110px; line-height: var(--leading-body); }
+
+.o-select-wrap { position: relative; display: block; }
+.o-select { appearance: none; padding-right: 44px; cursor: pointer; }
+.o-select-wrap__chevron { position: absolute; right: 16px; top: 50%; transform: translateY(-50%); pointer-events: none; color: var(--color-coral); }
+
+/* checkbox + radio */
+.o-choice { display: inline-flex; align-items: center; gap: var(--space-3); cursor: pointer; font-family: var(--font-body); color: var(--color-ruby); }
+.o-choice input { position: absolute; opacity: 0; width: 0; height: 0; }
+.o-choice__box {
+  width: 22px; height: 22px; flex: none;
+  border: 1.5px solid var(--color-tan);
+  background: var(--color-white);
+  display: inline-flex; align-items: center; justify-content: center;
+  transition: var(--transition-color);
+  color: var(--color-white);
+}
+.o-choice__box--checkbox { border-radius: var(--radius-xs); }
+.o-choice__box--radio { border-radius: var(--radius-round); }
+.o-choice__box svg { opacity: 0; transition: opacity var(--dur-fast) linear; }
+.o-choice__box--radio::after { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--color-white); opacity: 0; transition: opacity var(--dur-fast) linear; }
+.o-choice input:checked + .o-choice__box { background: var(--color-coral); border-color: var(--color-coral); }
+.o-choice input:checked + .o-choice__box svg { opacity: 1; }
+.o-choice input:checked + .o-choice__box--radio::after { opacity: 1; }
+.o-choice input:focus-visible + .o-choice__box { box-shadow: var(--focus-ring); }
+.o-choice input:disabled ~ * { opacity: 0.5; }
+
+/* switch */
+.o-switch { position: relative; display: inline-flex; align-items: center; cursor: pointer; }
+.o-switch input { position: absolute; opacity: 0; width: 0; height: 0; }
+.o-switch__track { width: 46px; height: 26px; border-radius: var(--radius-pill); background: var(--color-tan); transition: var(--transition-color); }
+.o-switch__thumb { position: absolute; top: 3px; left: 3px; width: 20px; height: 20px; border-radius: 50%; background: var(--color-white); box-shadow: var(--shadow-xs); transition: transform var(--dur-base) var(--ease-standard); }
+.o-switch input:checked + .o-switch__track { background: var(--color-coral); }
+.o-switch input:checked + .o-switch__track + .o-switch__thumb { transform: translateX(20px); }
+.o-switch input:focus-visible + .o-switch__track { box-shadow: var(--focus-ring); }
+
+</style>
+  <script src="36699fe7-db3f-4c6e-893e-5578103a034c"></script>
+  <style>
+    @keyframes slideUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.04); } }
+    body { margin: 0; background: #FCEEE5; }
+    *, *::before, *::after { box-sizing: border-box; }
+    a { color: #EB5E54; }
+    a:hover { color: #79242F; }
+  </style>
+</helmet>
+
+<div style="background: #FCEEE5; min-height: 100dvh; display: flex; flex-direction: column; align-items: center; padding: 36px 20px 56px; font-family: 'DM Sans', sans-serif;">
+
+  <div style="text-align: center; margin-bottom: 20px; max-width: 580px; width: 100%;">
+    <h1 style="font-family: 'Gopher', 'DM Sans', sans-serif; font-size: clamp(24px, 5.5vw, 42px); color: #EB5E54; margin: 0 0 10px; line-height: 1.1; letter-spacing: -0.3px;">{{ title }}</h1>
+    <p style="color: #EB5E54; font-size: 16px; font-weight: 700; margin: 0 0 6px; line-height: 1.4;">{{ banner }}</p>
+    <p style="color: #79242F; font-size: 15px; margin: 0; line-height: 1.6; opacity: 0.85;">Find all {{ totalCount }} terms hidden in the grid. Click and drag to select in any direction.</p>
+  </div>
+
+  <div style="font-size: 12px; font-weight: 700; color: #EB5E54; letter-spacing: 1.2px; text-transform: uppercase; margin-bottom: 14px;">{{ foundCount }} / {{ totalCount }} Found</div>
+
+  <div ref="{{ gridRef }}" sc-camel-on-mouse-up="{{ onMouseUp }}" sc-camel-on-mouse-leave="{{ onMouseLeave }}" style="display: grid; grid-template-columns: repeat(15, 1fr); width: min(540px, 100%); border: 2px solid #EB5E54; border-radius: 16px; overflow: hidden; margin-bottom: 28px; background: white; box-shadow: 0 4px 32px rgba(235,94,84,0.12); touch-action: none; cursor: crosshair;">
+    <sc-for list="{{ cells }}" as="cell">
+      <div data-row="{{ cell.row }}" data-col="{{ cell.col }}" sc-camel-on-mouse-down="{{ cell.onMouseDown }}" sc-camel-on-mouse-enter="{{ cell.onMouseEnter }}" style="{{ cell.style }}">{{ cell.letter }}</div>
+    </sc-for>
+  </div>
+
+  <div style="display: flex; flex-wrap: wrap; gap: 8px; max-width: 560px; justify-content: center; margin-bottom: 28px;">
+    <sc-for list="{{ wordListData }}" as="item" hint-placeholder-count="16">
+      <div style="{{ item.chipStyle }}">{{ item.label }}</div>
+    </sc-for>
+  </div>
+
+  <sc-if value="{{ allFound }}" hint-placeholder-val="{{ false }}">
+    <div style="text-align: center; animation: slideUp 0.5s ease; background: white; border-radius: 24px; padding: 32px 40px; box-shadow: 0 8px 48px rgba(235,94,84,0.18); max-width: 400px; margin-bottom: 20px;">
+      <div style="width: 60px; height: 60px; background: #EB5E54; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; animation: pulse 1s ease 0.3s;">
+        <svg width="30" height="30" sc-camel-view-box="0 0 30 30" fill="none">
+          <path d="M5 15l7 7 13-13" stroke="#FCEEE5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </div>
+      <h2 style="font-family: 'Gopher', 'DM Sans', sans-serif; color: #EB5E54; font-size: 26px; margin: 0 0 8px; line-height: 1.1;">You did it!</h2>
+      <p style="color: #79242F; margin: 0 0 22px; font-size: 15px; line-height: 1.6;">All {{ totalCount }} words found. {{ doneMsg }}</p>
+      <button sc-camel-on-click="{{ resetGame }}" style="background: #EB5E54; color: #FCEEE5; border: none; border-radius: 100px; padding: 12px 30px; font-size: 15px; font-weight: 700; cursor: pointer; font-family: 'DM Sans', sans-serif; letter-spacing: 0.4px;">Play Again</button>
+    </div>
+  </sc-if>
+
+  <button sc-camel-on-click="{{ resetGame }}" style="background: transparent; color: #79242F; border: none; font-size: 13px; font-weight: 600; cursor: pointer; font-family: 'DM Sans', sans-serif; opacity: 0.55; letter-spacing: 0.3px; padding: 4px 8px;">New Game</button>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="">
+class Component extends DCLogic {
+  DEFAULT = /*DEFAULT*/{"start": null, "title": "PT Month Word Search", "banner": "Happy National Physical Therapy Month! 🍂 Thank you, PTs and PTAs.", "done": "To every PT and PTA at Origin: thank you for helping our patients move, heal and feel strong. Happy PT Month!", "words": [{"word": "PHYSICALTHERAPY", "label": "Physical Therapy"}, {"word": "GRATITUDE", "label": "Gratitude"}, {"word": "RESISTANCE", "label": "Resistance"}, {"word": "FOAMROLLER", "label": "Foam Roller"}, {"word": "MOBILITY", "label": "Mobility"}, {"word": "RECOVERY", "label": "Recovery"}, {"word": "MOVEMENT", "label": "Movement"}, {"word": "PROGRESS", "label": "Progress"}, {"word": "CHAMPION", "label": "Champion"}, {"word": "THANKYOU", "label": "Thank You"}, {"word": "BALANCE", "label": "Balance"}, {"word": "STRETCH", "label": "Stretch"}, {"word": "PUMPKIN", "label": "Pumpkin"}, {"word": "HARVEST", "label": "Harvest"}, {"word": "AUTUMN", "label": "Autumn"}, {"word": "GAIT", "label": "Gait"}]}/*END*/;
+  SCHEDULE = /*SCHEDULE*/[{"start": "2026-10-26", "title": "Fall Fun Word Search", "banner": "Happy Halloween! 🎃 However you spend it, enjoy a fun fall week.", "done": "Nice work! 🎉 A new puzzle drops every Monday.", "words": [{"word": "COSTUME", "label": "Costume"}, {"word": "JACKOLANTERN", "label": "Jack-o'-Lantern"}, {"word": "SCARECROW", "label": "Scarecrow"}, {"word": "HAYRIDE", "label": "Hayride"}, {"word": "CIDER", "label": "Cider"}, {"word": "ACORN", "label": "Acorn"}, {"word": "MAPLE", "label": "Maple"}, {"word": "BONFIRE", "label": "Bonfire"}, {"word": "CARAMEL", "label": "Caramel"}, {"word": "CORNMAZE", "label": "Corn Maze"}, {"word": "TRICKORTREAT", "label": "Trick or Treat"}, {"word": "CANDYCORN", "label": "Candy Corn"}, {"word": "FLANNEL", "label": "Flannel"}, {"word": "GOURD", "label": "Gourd"}, {"word": "SQUASH", "label": "Squash"}, {"word": "OWL", "label": "Owl"}]}, {"start": "2026-11-02", "title": "Rest & Recovery Word Search", "banner": "Clocks fall back 11/1. Use the extra hour to rest! Happy Diwali (11/8) to all who celebrate. 🪔", "done": "Nice work! 🎉 A new puzzle drops every Monday.", "words": [{"word": "SLEEP", "label": "Sleep"}, {"word": "PILLOW", "label": "Pillow"}, {"word": "BLANKET", "label": "Blanket"}, {"word": "NAPTIME", "label": "Nap Time"}, {"word": "BEDTIME", "label": "Bedtime"}, {"word": "DREAMS", "label": "Dreams"}, {"word": "RECHARGE", "label": "Recharge"}, {"word": "RESTDAY", "label": "Rest Day"}, {"word": "ICEPACK", "label": "Ice Pack"}, {"word": "HEATINGPAD", "label": "Heating Pad"}, {"word": "WINDDOWN", "label": "Wind Down"}, {"word": "MEDITATE", "label": "Meditate"}, {"word": "PAJAMAS", "label": "Pajamas"}, {"word": "SNOOZE", "label": "Snooze"}, {"word": "UNPLUG", "label": "Unplug"}, {"word": "CALM", "label": "Calm"}]}, {"start": "2026-11-09", "title": "Bladder Health Month Word Search", "banner": "November is Bladder Health Month. 💧 And thank you to the veterans on our team and those we care for (Veterans Day, 11/11).", "done": "Nice work! 🎉 A new puzzle drops every Monday.", "words": [{"word": "BLADDERHEALTH", "label": "Bladder Health"}, {"word": "HYDRATION", "label": "Hydration"}, {"word": "WATERBOTTLE", "label": "Water Bottle"}, {"word": "KIDNEYS", "label": "Kidneys"}, {"word": "HABITS", "label": "Habits"}, {"word": "URGENCY", "label": "Urgency"}, {"word": "PELVICFLOOR", "label": "Pelvic Floor"}, {"word": "CAFFEINE", "label": "Caffeine"}, {"word": "HERBALTEA", "label": "Herbal Tea"}, {"word": "FIBER", "label": "Fiber"}, {"word": "BLADDERDIARY", "label": "Bladder Diary"}, {"word": "CONTROL", "label": "Control"}, {"word": "CONFIDENCE", "label": "Confidence"}, {"word": "TIMING", "label": "Timing"}, {"word": "RELAX", "label": "Relax"}, {"word": "SIPS", "label": "Sips"}]}, {"start": "2026-11-16", "title": "Friends & Gratitude Word Search", "banner": "Friendsgiving week! 🧡 Thank a teammate who made your week easier.", "done": "Nice work! 🎉 A new puzzle drops every Monday.", "words": [{"word": "FRIENDSHIP", "label": "Friendship"}, {"word": "KINDNESS", "label": "Kindness"}, {"word": "TEAMWORK", "label": "Teamwork"}, {"word": "COWORKERS", "label": "Coworkers"}, {"word": "SUPPORT", "label": "Support"}, {"word": "LAUGHTER", "label": "Laughter"}, {"word": "COMMUNITY", "label": "Community"}, {"word": "SHOUTOUT", "label": "Shout-Out"}, {"word": "HIGHFIVE", "label": "High Five"}, {"word": "GENEROUS", "label": "Generous"}, {"word": "CHEER", "label": "Cheer"}, {"word": "ENCOURAGE", "label": "Encourage"}, {"word": "MENTOR", "label": "Mentor"}, {"word": "HUDDLE", "label": "Huddle"}, {"word": "KUDOS", "label": "Kudos"}, {"word": "WELCOME", "label": "Welcome"}]}, {"start": "2026-11-23", "title": "The Holiday Table Word Search", "banner": "Happy Thanksgiving (11/26) to those celebrating! 🥧 Running a Turkey Trot? Warm up first.", "done": "Nice work! 🎉 A new puzzle drops every Monday.", "words": [{"word": "POTLUCK", "label": "Potluck"}, {"word": "LEFTOVERS", "label": "Leftovers"}, {"word": "CRANBERRY", "label": "Cranberry"}, {"word": "GRAVY", "label": "Gravy"}, {"word": "PIE", "label": "Pie"}, {"word": "CASSEROLE", "label": "Casserole"}, {"word": "SWEETPOTATO", "label": "Sweet Potato"}, {"word": "CORNBREAD", "label": "Cornbread"}, {"word": "FEAST", "label": "Feast"}, {"word": "NAPKIN", "label": "Napkin"}, {"word": "PARADE", "label": "Parade"}, {"word": "FOOTBALL", "label": "Football"}, {"word": "TURKEYTROT", "label": "Turkey Trot"}, {"word": "GATHER", "label": "Gather"}, {"word": "STROLL", "label": "Stroll"}, {"word": "TABLE", "label": "Table"}]}, {"start": "2026-11-30", "title": "Desk & Posture Word Search", "banner": "Check your setup this week: screen at eye level, feet supported, and a stretch break every hour. 💻", "done": "Nice work! 🎉 A new puzzle drops every Monday.", "words": [{"word": "ERGONOMICS", "label": "Ergonomics"}, {"word": "STANDINGDESK", "label": "Standing Desk"}, {"word": "MONITOR", "label": "Monitor"}, {"word": "KEYBOARD", "label": "Keyboard"}, {"word": "LUMBAR", "label": "Lumbar"}, {"word": "FOOTREST", "label": "Footrest"}, {"word": "NECKROLLS", "label": "Neck Rolls"}, {"word": "SHOULDERS", "label": "Shoulders"}, {"word": "SPINE", "label": "Spine"}, {"word": "WRIST", "label": "Wrist"}, {"word": "CHAIR", "label": "Chair"}, {"word": "ALIGNMENT", "label": "Alignment"}, {"word": "HEADSET", "label": "Headset"}, {"word": "MICROBREAK", "label": "Micro-Break"}, {"word": "STEPS", "label": "Steps"}, {"word": "SCREENTIME", "label": "Screen Time"}]}, {"start": "2026-12-07", "title": "Breathe Easy Word Search", "banner": "Busy season? Take three slow belly breaths. 🌬️ Happy Hanukkah (12/4 to 12/12) to all who celebrate.", "done": "Nice work! 🎉 A new puzzle drops every Monday.", "words": [{"word": "DIAPHRAGM", "label": "Diaphragm"}, {"word": "INHALE", "label": "Inhale"}, {"word": "EXHALE", "label": "Exhale"}, {"word": "RIBCAGE", "label": "Ribcage"}, {"word": "BELLYBREATH", "label": "Belly Breath"}, {"word": "GROUNDING", "label": "Grounding"}, {"word": "MINDFUL", "label": "Mindful"}, {"word": "PAUSE", "label": "Pause"}, {"word": "PRESENT", "label": "Present"}, {"word": "RELAXATION", "label": "Relaxation"}, {"word": "SIGH", "label": "Sigh"}, {"word": "LUNGS", "label": "Lungs"}, {"word": "STILLNESS", "label": "Stillness"}, {"word": "BOXBREATHING", "label": "Box Breathing"}, {"word": "NERVOUSSYSTEM", "label": "Nervous System"}, {"word": "PEACE", "label": "Peace"}]}, {"start": "2026-12-14", "title": "Growing Families Word Search", "banner": "Celebrating every path to parenthood and the care teams who support it. 👶", "done": "Nice work! 🎉 A new puzzle drops every Monday.", "words": [{"word": "PREGNANCY", "label": "Pregnancy"}, {"word": "BUMP", "label": "Bump"}, {"word": "NURSERY", "label": "Nursery"}, {"word": "NEWBORN", "label": "Newborn"}, {"word": "LULLABY", "label": "Lullaby"}, {"word": "CRIB", "label": "Crib"}, {"word": "STROLLER", "label": "Stroller"}, {"word": "CARSEAT", "label": "Car Seat"}, {"word": "BIRTHPLAN", "label": "Birth Plan"}, {"word": "DOULA", "label": "Doula"}, {"word": "MIDWIFE", "label": "Midwife"}, {"word": "FOURTHTRIMESTER", "label": "Fourth Trimester"}, {"word": "SWADDLE", "label": "Swaddle"}, {"word": "FAMILY", "label": "Family"}, {"word": "CUDDLES", "label": "Cuddles"}, {"word": "ADOPTION", "label": "Adoption"}]}, {"start": "2026-12-21", "title": "Winter Lights Word Search", "banner": "Happy solstice (12/21)! 🕯️ Wishing everyone a warm season, however and wherever you celebrate.", "done": "Nice work! 🎉 A new puzzle drops every Monday.", "words": [{"word": "SOLSTICE", "label": "Solstice"}, {"word": "LIGHTS", "label": "Lights"}, {"word": "LANTERN", "label": "Lantern"}, {"word": "COCOA", "label": "Cocoa"}, {"word": "MITTENS", "label": "Mittens"}, {"word": "SCARF", "label": "Scarf"}, {"word": "SWEATER", "label": "Sweater"}, {"word": "GINGERBREAD", "label": "Gingerbread"}, {"word": "SNOWFLAKE", "label": "Snowflake"}, {"word": "TRADITIONS", "label": "Traditions"}, {"word": "GIFTWRAP", "label": "Gift Wrap"}, {"word": "PEPPERMINT", "label": "Peppermint"}, {"word": "EVERGREEN", "label": "Evergreen"}, {"word": "FIRESIDE", "label": "Fireside"}, {"word": "SINGALONG", "label": "Sing-Along"}, {"word": "COZY", "label": "Cozy"}]}, {"start": "2026-12-28", "title": "Year of Wins Word Search", "banner": "Here's to every patient milestone of 2026, big and small. 🎉 Happy New Year!", "done": "Nice work! 🎉 A new puzzle drops every Monday.", "words": [{"word": "MILESTONE", "label": "Milestone"}, {"word": "ACHIEVEMENT", "label": "Achievement"}, {"word": "HIGHLIGHTS", "label": "Highlights"}, {"word": "REFLECT", "label": "Reflect"}, {"word": "CONFETTI", "label": "Confetti"}, {"word": "CHEERS", "label": "Cheers"}, {"word": "RESOLUTION", "label": "Resolution"}, {"word": "FRESHSTART", "label": "Fresh Start"}, {"word": "COUNTDOWN", "label": "Countdown"}, {"word": "FIREWORKS", "label": "Fireworks"}, {"word": "MIDNIGHT", "label": "Midnight"}, {"word": "CALENDAR", "label": "Calendar"}, {"word": "GOALS", "label": "Goals"}, {"word": "GROWTH", "label": "Growth"}, {"word": "PROUD", "label": "Proud"}, {"word": "NEWYEAR", "label": "New Year"}]}, {"start": "2027-01-04", "title": "New Habits Word Search", "banner": "New year, small steps. 🌱 Our favorite resolution is doing the home program.", "done": "Nice work! 🎉 A new puzzle drops every Monday.", "words": [{"word": "HOMEPROGRAM", "label": "Home Program"}, {"word": "ROUTINE", "label": "Routine"}, {"word": "HABIT", "label": "Habit"}, {"word": "CONSISTENCY", "label": "Consistency"}, {"word": "REPS", "label": "Reps"}, {"word": "SQUAT", "label": "Squat"}, {"word": "BRIDGE", "label": "Bridge"}, {"word": "PLANK", "label": "Plank"}, {"word": "CLAMSHELL", "label": "Clamshell"}, {"word": "BIRDDOG", "label": "Bird Dog"}, {"word": "WARMUP", "label": "Warm-Up"}, {"word": "COOLDOWN", "label": "Cool-Down"}, {"word": "JOURNAL", "label": "Journal"}, {"word": "SMALLSTEPS", "label": "Small Steps"}, {"word": "PATIENCE", "label": "Patience"}, {"word": "SETS", "label": "Sets"}]}, {"start": "2027-01-11", "title": "Core 101 Word Search", "banner": "Your core is a team: diaphragm, deep abs, back muscles and pelvic floor. 💪", "done": "Nice work! 🎉 A new puzzle drops every Monday.", "words": [{"word": "TRANSVERSUS", "label": "Transversus"}, {"word": "OBLIQUES", "label": "Obliques"}, {"word": "GLUTES", "label": "Glutes"}, {"word": "HIPFLEXORS", "label": "Hip Flexors"}, {"word": "MULTIFIDUS", "label": "Multifidus"}, {"word": "SACRUM", "label": "Sacrum"}, {"word": "TAILBONE", "label": "Tailbone"}, {"word": "COORDINATION", "label": "Coordination"}, {"word": "ENDURANCE", "label": "Endurance"}, {"word": "CONTRACT", "label": "Contract"}, {"word": "LENGTHEN", "label": "Lengthen"}, {"word": "ENGAGE", "label": "Engage"}, {"word": "PRESSURE", "label": "Pressure"}, {"word": "BRACING", "label": "Bracing"}, {"word": "ABDOMINALS", "label": "Abdominals"}, {"word": "PIRIFORMIS", "label": "Piriformis"}]}, {"start": "2027-01-18", "title": "Healing & Recovery Word Search", "banner": "Honoring Dr. Martin Luther King Jr. (1/18), a day of service. 🤝 Here's to the care we give every day.", "done": "Nice work! 🎉 A new puzzle drops every Monday.", "words": [{"word": "CSECTION", "label": "C-Section"}, {"word": "SCARMASSAGE", "label": "Scar Massage"}, {"word": "HYSTERECTOMY", "label": "Hysterectomy"}, {"word": "SURGERY", "label": "Surgery"}, {"word": "COMPRESSION", "label": "Compression"}, {"word": "ELEVATION", "label": "Elevation"}, {"word": "NUTRITION", "label": "Nutrition"}, {"word": "NOURISH", "label": "Nourish"}, {"word": "SUPPORTSYSTEM", "label": "Support System"}, {"word": "CAREPLAN", "label": "Care Plan"}, {"word": "FOLLOWUP", "label": "Follow-Up"}, {"word": "RESILIENCE", "label": "Resilience"}, {"word": "HOPE", "label": "Hope"}, {"word": "SERVICE", "label": "Service"}, {"word": "COMPASSION", "label": "Compassion"}, {"word": "GENTLE", "label": "Gentle"}]}, {"start": "2027-01-25", "title": "Bones & Balance Word Search", "banner": "Icy sidewalk or sunny trail, sturdy shoes and good balance help everywhere. 🦴", "done": "Nice work! 🎉 A new puzzle drops every Monday.", "words": [{"word": "OSTEOPOROSIS", "label": "Osteoporosis"}, {"word": "CALCIUM", "label": "Calcium"}, {"word": "VITAMIND", "label": "Vitamin D"}, {"word": "WEIGHTBEARING", "label": "Weight-Bearing"}, {"word": "FEMUR", "label": "Femur"}, {"word": "PATELLA", "label": "Patella"}, {"word": "JOINTS", "label": "Joints"}, {"word": "CARTILAGE", "label": "Cartilage"}, {"word": "STEADY", "label": "Steady"}, {"word": "FALLPREVENTION", "label": "Fall Prevention"}, {"word": "GRIPPYSOCKS", "label": "Grippy Socks"}, {"word": "HANDRAIL", "label": "Handrail"}, {"word": "ANKLES", "label": "Ankles"}, {"word": "BONEDENSITY", "label": "Bone Density"}, {"word": "TENDONS", "label": "Tendons"}, {"word": "LIGAMENTS", "label": "Ligaments"}]}, {"start": "2027-02-01", "title": "Heart Month Word Search", "banner": "February is American Heart Month and Black History Month. ❤️ Happy Lunar New Year (2/6)!", "done": "Nice work! 🎉 A new puzzle drops every Monday.", "words": [{"word": "HEARTRATE", "label": "Heart Rate"}, {"word": "CARDIO", "label": "Cardio"}, {"word": "PULSE", "label": "Pulse"}, {"word": "CIRCULATION", "label": "Circulation"}, {"word": "STAIRS", "label": "Stairs"}, {"word": "DANCE", "label": "Dance"}, {"word": "SWIM", "label": "Swim"}, {"word": "CYCLING", "label": "Cycling"}, {"word": "HIKING", "label": "Hiking"}, {"word": "BLOODPRESSURE", "label": "Blood Pressure"}, {"word": "OXYGEN", "label": "Oxygen"}, {"word": "STAMINA", "label": "Stamina"}, {"word": "WEARRED", "label": "Wear Red"}, {"word": "AEROBIC", "label": "Aerobic"}, {"word": "JOG", "label": "Jog"}, {"word": "HEARTBEAT", "label": "Heartbeat"}]}, {"start": "2027-02-08", "title": "Self-Care & Kindness Word Search", "banner": "Love yourself, love your crew. 💌 Happy Valentine's (and Galentine's) Day!", "done": "Nice work! 🎉 A new puzzle drops every Monday.", "words": [{"word": "SELFCARE", "label": "Self-Care"}, {"word": "COMPLIMENT", "label": "Compliment"}, {"word": "HUGS", "label": "Hugs"}, {"word": "CHOCOLATE", "label": "Chocolate"}, {"word": "VALENTINE", "label": "Valentine"}, {"word": "CARDS", "label": "Cards"}, {"word": "FLOWERS", "label": "Flowers"}, {"word": "BUBBLEBATH", "label": "Bubble Bath"}, {"word": "GRATEFUL", "label": "Grateful"}, {"word": "AFFIRMATION", "label": "Affirmation"}, {"word": "SMILE", "label": "Smile"}, {"word": "BOUNDARIES", "label": "Boundaries"}, {"word": "REST", "label": "Rest"}, {"word": "SELFLOVE", "label": "Self-Love"}, {"word": "ROSES", "label": "Roses"}, {"word": "PLAYLIST", "label": "Playlist"}]}]/*END*/;
+  WEEK = this.pickWeek();
+  WORDS = this.WEEK.words;
+
+  // Weekly rotation: the last entry whose Monday (viewer's local date) has arrived wins.
+  // Before the first entry the October puzzle (DEFAULT) shows; after the last, the last week stays up.
+  // Preview any day with ?date=YYYY-MM-DD.
+  pickWeek() {
+    let today;
+    try {
+      const p = new URLSearchParams(window.location.search).get('date');
+      if (p && /^\d{4}-\d{2}-\d{2}$/.test(p)) today = p;
+    } catch (e) { /* no location in this context */ }
+    if (!today) {
+      const d = new Date();
+      today = new Date(d.getTime() - d.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+    }
+    let pick = this.DEFAULT;
+    for (const w of this.SCHEDULE) if (w.start <= today) pick = w;
+    return pick;
+  }
+
+  FOUND_COLORS = ['#EB5E54','#79242F','#5B8A9A','#B5693A','#7B6EA5','#4E7A5B','#C4614A','#8A5C6E'];
+
+  state = {
+    grid: null,
+    wordPlacements: null,
+    foundWords: new Set(),
+    selecting: false,
+    startCell: null,
+    selectedCells: [],
+  };
+
+  gridRef = React.createRef();
+
+  componentDidMount() {
+    this.initGame();
+    const el = this.gridRef.current;
+    if (el) {
+      el.addEventListener('touchstart', this.handleTouchStart, { passive: false });
+      el.addEventListener('touchmove',  this.handleTouchMove,  { passive: false });
+      el.addEventListener('touchend',   this.endSelection,     { passive: false });
+    }
+  }
+
+  componentWillUnmount() {
+    const el = this.gridRef.current;
+    if (el) {
+      el.removeEventListener('touchstart', this.handleTouchStart);
+      el.removeEventListener('touchmove',  this.handleTouchMove);
+      el.removeEventListener('touchend',   this.endSelection);
+    }
+  }
+
+  initGame() {
+    for (let tries = 0; tries < 50; tries++) {
+      if (this.buildGrid()) return;
+    }
+  }
+
+  buildGrid() {
+    const SIZE = 15;
+    const DIRS = [[0,1],[0,-1],[1,0],[-1,0],[1,1],[1,-1],[-1,1],[-1,-1]];
+    const grid = Array.from({ length: SIZE }, () => Array(SIZE).fill(''));
+    const wordPlacements = {};
+    const sorted = [...this.WORDS].sort((a, b) => b.word.length - a.word.length);
+
+    for (const { word } of sorted) {
+      let placed = false;
+      for (let attempt = 0; attempt < 400 && !placed; attempt++) {
+        const [dr, dc] = DIRS[Math.floor(Math.random() * 8)];
+        const row = Math.floor(Math.random() * SIZE);
+        const col = Math.floor(Math.random() * SIZE);
+        const er = row + dr * (word.length - 1);
+        const ec = col + dc * (word.length - 1);
+        if (er < 0 || er >= SIZE || ec < 0 || ec >= SIZE) continue;
+        let ok = true;
+        const cells = [];
+        for (let i = 0; i < word.length; i++) {
+          const r = row + dr * i, c = col + dc * i;
+          if (grid[r][c] && grid[r][c] !== word[i]) { ok = false; break; }
+          cells.push({ row: r, col: c });
+        }
+        if (ok) {
+          cells.forEach(({ row: r, col: c }, i) => { grid[r][c] = word[i]; });
+          wordPlacements[word] = cells;
+          placed = true;
+        }
+      }
+    }
+
+    if (Object.keys(wordPlacements).length !== this.WORDS.length) return false;
+
+    const ABC = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    for (let r = 0; r < SIZE; r++)
+      for (let c = 0; c < SIZE; c++)
+        if (!grid[r][c]) grid[r][c] = ABC[Math.floor(Math.random() * 26)];
+
+    this.setState({ grid, wordPlacements, foundWords: new Set(), selectedCells: [], selecting: false, startCell: null });
+    return true;
+  }
+
+  cellFromPoint(x, y) {
+    const el = document.elementFromPoint(x, y)?.closest('[data-row]');
+    if (!el) return null;
+    return { row: +el.dataset.row, col: +el.dataset.col };
+  }
+
+  handleTouchStart = (e) => {
+    e.preventDefault();
+    const c = this.cellFromPoint(e.touches[0].clientX, e.touches[0].clientY);
+    if (c) this.startSelection(c.row, c.col);
+  };
+
+  handleTouchMove = (e) => {
+    e.preventDefault();
+    const c = this.cellFromPoint(e.touches[0].clientX, e.touches[0].clientY);
+    if (c) this.continueSelection(c.row, c.col);
+  };
+
+  startSelection = (row, col) => {
+    this.setState({ selecting: true, startCell: { row, col }, selectedCells: [{ row, col }] });
+  };
+
+  continueSelection = (row, col) => {
+    if (!this.state.selecting || !this.state.startCell) return;
+    this.setState({ selectedCells: this.lineCells(this.state.startCell, { row, col }) });
+  };
+
+  lineCells(start, end) {
+    const dr = end.row - start.row, dc = end.col - start.col;
+    const adr = Math.abs(dr), adc = Math.abs(dc);
+    if (adr === 0 && adc === 0) return [start];
+    let sr, sc, steps;
+    if      (adr === 0)   { sr = 0;           sc = Math.sign(dc); steps = adc; }
+    else if (adc === 0)   { sr = Math.sign(dr); sc = 0;           steps = adr; }
+    else if (adr === adc) { sr = Math.sign(dr); sc = Math.sign(dc); steps = adr; }
+    else if (adr > adc)   { sr = Math.sign(dr); sc = 0;           steps = adr; }
+    else                  { sr = 0;           sc = Math.sign(dc); steps = adc; }
+    return Array.from({ length: steps + 1 }, (_, i) => ({ row: start.row + sr * i, col: start.col + sc * i }));
+  }
+
+  endSelection = () => {
+    const { selectedCells, foundWords, wordPlacements } = this.state;
+    let found = null;
+    if (selectedCells.length >= 2 && wordPlacements) {
+      const selKey = selectedCells.map(c => `${c.row},${c.col}`).sort().join('|');
+      for (const [word, cells] of Object.entries(wordPlacements)) {
+        if (foundWords.has(word) || cells.length !== selectedCells.length) continue;
+        if (cells.map(c => `${c.row},${c.col}`).sort().join('|') === selKey) { found = word; break; }
+      }
+    }
+    const newFound = found ? new Set([...foundWords, found]) : foundWords;
+    this.setState({ selecting: false, startCell: null, selectedCells: [], foundWords: newFound });
+  };
+
+  renderVals() {
+    const { grid, wordPlacements, foundWords, selectedCells } = this.state;
+    const selSet = new Set(selectedCells.map(c => `${c.row},${c.col}`));
+
+    // Map found word cells to colors
+    const foundCellColor = {};
+    let ci = 0;
+    for (const w of foundWords) {
+      const color = this.FOUND_COLORS[ci++ % this.FOUND_COLORS.length];
+      (wordPlacements?.[w] || []).forEach(({ row: r, col: c }) => {
+        foundCellColor[`${r},${c}`] = color;
+      });
+    }
+
+    const cells = !grid ? [] : grid.flatMap((row, r) =>
+      row.map((letter, c) => {
+        const key = `${r},${c}`;
+        const isSel = selSet.has(key);
+        const fColor = foundCellColor[key];
+        const bg = isSel ? '#EB5E54' : (fColor || 'transparent');
+        const textColor = (isSel || fColor) ? '#FCEEE5' : '#79242F';
+        return {
+          letter, row: r, col: c,
+          style: {
+            aspectRatio: '1',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            fontFamily: "'DM Sans', monospace",
+            fontSize: 'clamp(9px, 1.9vw, 16px)',
+            fontWeight: '700',
+            background: bg,
+            color: textColor,
+            transition: 'background 0.07s, color 0.07s',
+            borderRight: '1px solid rgba(235,94,84,0.1)',
+            borderBottom: '1px solid rgba(235,94,84,0.1)',
+            cursor: 'crosshair',
+            WebkitUserSelect: 'none',
+            userSelect: 'none',
+          },
+          onMouseDown: () => this.startSelection(r, c),
+          onMouseEnter: () => this.continueSelection(r, c),
+        };
+      })
+    );
+
+    const wordListData = this.WORDS.map(({ word, label }) => {
+      const found = foundWords.has(word);
+      return {
+        label,
+        chipStyle: {
+          padding: '6px 16px',
+          borderRadius: '100px',
+          fontSize: '13px',
+          fontWeight: '600',
+          fontFamily: "'DM Sans', sans-serif",
+          background: found ? '#EB5E54' : '#FFDECF',
+          color: found ? '#FCEEE5' : '#79242F',
+          textDecoration: found ? 'line-through' : 'none',
+          transition: 'background 0.25s, color 0.25s',
+          letterSpacing: '0.2px',
+        },
+      };
+    });
+
+    const allFound = foundWords.size === this.WORDS.length;
+    return {
+      title: this.WEEK.title,
+      banner: this.WEEK.banner,
+      doneMsg: this.WEEK.done,
+      cells,
+      wordListData,
+      allFound,
+      foundCount: foundWords.size,
+      totalCount: this.WORDS.length,
+      gridRef: this.gridRef,
+      onMouseUp: this.endSelection,
+      onMouseLeave: () => { if (this.state.selecting) this.endSelection(); },
+      resetGame: () => this.initGame(),
+    };
+  }
+}
+</script>
+
+
+</body></html>
